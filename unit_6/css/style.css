@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(255,255,255);
+	color: #222222;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}	
+
+
+h1, h2, h3, h4 {
+	font-family: 'Permanent Marker', cursive;
+	padding: .5em 0;
+	color: #196CB6;
+}
+
+p {
+	margin-top: .5em;
+	margin-bottom: 1em;
+}
+
+header {
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	padding: 10px 20px ;
+}
+
+nav {
+	font-family: 'Roboto Slab', serif;
+	margin-top: 1.5em;
+	float: right;
+}
+
+nav a:link {
+	color: #fff;
+	text-decoration: none;
+	margin: .5em;
+	padding: 0 1em 0 0;
+	display: inline-block;
+	border-right: 2px solid #196CB6; 
+}
+
+nav a:visited{
+	color: #fff;
+	border-right: 2px solid #196CB6;
+}
+
+nav a:hover{
+	font-weight: 700;
+	color: #95C6FF;
+	border-right: 2px solid #196CB6;
+}
+
+nav a:active{
+	color: #fff;
+	border-right: 2px solid #196CB6;
+}
+
+a:visited{
+	color: #196CB6;
+}
+
+a:link {
+	color: #196CB6;
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: 700;
+}
+
+a:active{
+	color: #196CB6;
+}
+
+aside {
+	float: left;
+	max-width: 700px;
+	padding: 20px 20px;
+	margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: sub;
+}
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+	clear: both;
+}
+
+#slogan {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	color: #196CB6;
+	text-align: center;
+}
+
+
+#logo {
+	width: 350px;
+	float: left;
+}
+
+#contact {
+	font-size: 30px;
+	color: #196CB6;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#info {
+	background-color: rgb(255,255,255);
+	margin: 2% 2%;
+	line-height: 1.5em;
+	width: 16%;
+	float: left;
+}
+
+#force-right {
+	clear: both;
+	background-color: rgb(255,255,255);
+	margin: 2% 2%;
+	width: 16%;
+	height: 250px;
+	float: left;
+	visibility: hidden;
+}
+
+#links {
+	font-weight: 400;
+	color: #196CB6;
+	list-style-type:none;
+}
+
+#categories {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	color: #196CB6;
+	text-align: left;
+	margin-top: 20px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: ".";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+.gallery {
+	margin: 2%, 0;
+	float: left;
+	width: 80%;
+}
+
+.gallery img {
+	/*float: left;*/
+	max-height: 220px;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	display: inline-block;
+}
+
+
+.wrapper {
+	width: 100%;
+}
