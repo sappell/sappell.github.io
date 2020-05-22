@@ -24,7 +24,7 @@ h1, h2, h3, h4 {
 
 p {
 	margin-top: .5em;
-	margin-bottom: 1em;
+	margin-bottom: .5em;
 }
 
 header {
@@ -33,37 +33,6 @@ header {
 	padding: 10px 20px;
 }
 
-/*nav {
-	font-family: 'Roboto Slab', serif;
-	margin-top: 1.5em;
-	float: right;
-}
-
-nav a:link {
-	color: #fff;
-	text-decoration: none;
-	margin: .5em;
-	padding: 0 1em 0 0;
-	display: inline-block;
-	border-right: 2px solid #196CB6; 
-}
-
-nav a:visited{
-	color: #fff;
-	border-right: 2px solid #196CB6;
-}
-
-nav a:hover{
-	font-weight: 700;
-	color: #95C6FF;
-	border-right: 2px solid #196CB6;
-}
-
-nav a:active{
-	color: #fff;
-	border-right: 2px solid #196CB6;
-}
-*/
 
 a:visited{
 	color: #196CB6;
@@ -103,7 +72,7 @@ footer {
 
 #slogan {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 30px;
+	font-size: 2em;
 	color: #196CB6;
 	text-align: center;
 }
@@ -296,12 +265,27 @@ footer {
 	list-style-type: none;
 	display: inline;
 	}
+
+	aside {
+	float: none;
+	max-width: 96%;
+	padding: 0px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 2em;
+	}
 }
 
 @media screen and (max-width:570px){
+	#slogan {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.5em;
+	color: #196CB6;
+	text-align: center;
+	}
 
 	#logo {
-	width: 260px;
+	width: 220px;
 	float: none;
 	margin: auto;
 	}
