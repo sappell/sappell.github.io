@@ -140,7 +140,7 @@ footer {
 }
 
 .mobile-menu {
- 	margin-top: 1.5em;
+ 	margin-top: 1em;
 	float: right;
 }
 
@@ -210,7 +210,7 @@ footer {
 	color: #fff;
 	background: #000;
 	text-align: center;
-	padding: 0px 15px;
+	padding: 0px;
 	display: none;
 	cursor: pointer;
 	text-transform: uppercase;
@@ -285,9 +285,7 @@ footer {
 	}
 
 	#logo {
-	width: 220px;
-	float: none;
-	margin: auto;
+	width: 50%;
 	}
 
 	#info {
