@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(255,255,255);
+	color: #222222;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}	
+
+
+h1, h2, h3, h4 {
+	font-family: 'Permanent Marker', cursive;
+	padding: .5em 0;
+	color: #196CB6;
+}
+
+p {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+header {
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	padding: 10px 20px;
+}
+
+
+a:visited{
+	color: #196CB6;
+}
+
+a:link {
+	color: #196CB6;
+	text-decoration: none;
+}
+
+a:hover{
+	font-weight: 700;
+}
+
+a:active{
+	color: #196CB6;
+}
+
+aside {
+	float: left;
+	max-width: 700px;
+	padding: 20px 20px;
+	margin-left: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: sub;
+}
+
+footer {
+	text-align: center;
+	padding-top: 10px;
+	clear: both;
+}
+
+#slogan {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 2em;
+	color: #196CB6;
+	text-align: center;
+	padding: .5em .5em;
+}
+
+
+#logo {
+	width: 350px;
+	float: left;
+}
+
+#contact {
+	font-size: 30px;
+	color: #196CB6;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+#hero {
+	width: 100%;
+}
+
+#info {
+	background-color: rgb(255,255,255);
+	margin: 2%;
+	line-height: 1.5em;
+	width: 16%;
+	float: left;
+}
+
+#links {
+	font-weight: 400;
+	color: #196CB6;
+	list-style-type:none;
+}
+
+#categories {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	color: #196CB6;
+	text-align: left;
+	margin-top: 20px;
+}
+
+#top {
+	font-size: .85em;
+	color: #8C8C8C;
+	padding-top: .75em;
+	display: block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: ".";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+.gallery {
+	margin: 2%, 0;
+	float: right;
+	width: 78%;
+}
+
+.gallery img {
+	max-width: 100%;
+	max-height: 250px;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	display: inline-block;
+}
+
+
+.wrapper {
+	width: 100%;
+}
+
+.mobile-menu {
+ 	margin-top: 1em;
+	float: right;
+}
+
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+	list-style-type:none;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+	text-align: center;
+	color: #fff;
+	font-family: 'Roboto Slab', serif;
+	text-decoration: none;
+	margin: .5em;
+	padding: 0 1em 0 0;
+	display: inline-block;
+	border-right: 2px solid #196CB6; 
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	font-weight: 700;
+	color: #95C6FF;
+	border-right: 2px solid #196CB6;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #000;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	padding: 0px;
+	display: none;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+ 	   padding-right: 10px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu {
+    display: block;
+    float: none;
+}
+
+@media screen and (max-width:995px){
+
+	.mobile-menu {
+ 		font-family: 'Roboto Slab', serif;
+ 		margin-top: .5em;
+		float: none;
+	}
+
+	#logo {
+		width: 350px;
+		float: none;
+	}
+
+	#info {
+		background-color: rgb(255,255,255);
+		margin: 2%;
+		line-height: 1.5em;
+		width: 90%;
+		float: none;
+	}
+
+	.gallery {
+		margin: 2%;
+		float: none;
+		width: 100%;
+	}
+
+	#links {
+		font-weight: 400;
+		color: #196CB6;
+		list-style-type: none;
+		display: inline;
+	}
+
+	aside {
+		float: none;
+		max-width: 96%;
+		padding: 0px;
+		margin-left: 2%;
+		margin-right: 2%;
+		margin-top: 2em;
+	}
+}
+
+@media screen and (max-width:570px){
+
+	header {
+		background-color: rgb(0,0,0);
+		color: rgb(255,255,255);
+		padding: 10px 15px;
+	}
+
+	#slogan {
+		font-family: 'Permanent Marker', cursive;
+		font-size: 1.5em;
+		color: #196CB6;
+		text-align: center;
+	}
+
+	#logo {
+		width: 70%;
+	}
+
+	#info {
+		background-color: rgb(255,255,255);
+		margin: 2%;
+		line-height: 1.5em;
+		width: 90%;
+		float: none;
+	}
+
+	.gallery {
+		margin: 2%;
+		float: none;
+		width: 96%;
+	}
+
+	.gallery img {
+		max-height: none;
+		width: 96%
+		margin-right: 2%;
+		margin-bottom: 2%;
+		display: inline-block;
+	}
+
+	#links {
+		font-weight: 400;
+		color: #196CB6;
+		list-style-type: none;
+	}
+
+	.mobile-menu {
+ 		margin-top: 2em;
+		float: right;
+	}
+	
+	.mobile-menu .lines {
+    	border-bottom: 10px double #196CB6; 
+    	border-top: 3px solid #196CB6; 
+    	content:"";
+    	height: 4px; 
+    	width: 20px;
+    	padding-right: 10px;
+  		float: right;
+	}
+
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+		border-right: none;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 94%;
+		padding-right: 6%;
+		border-right: none;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+
+	#logo {
+		width: 66%;
+	}
+
+	.mobile-menu {
+ 		margin-top: 1em;
+		float: right;
+	}
+
+	.mobile-menu li {
+		margin-bottom: 1px;
+		border-right: none;
+		font-size: .8em;
+	}
+
+		/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 96%;
+		padding-right: 4%;
+		border-right: none;
+	}
+
+	.mobile-menu .show-menu span{
+ 	 	padding-left: 0px;
+ 	 	padding-right: 5px;
+ 	 	font-size: .8em;
+	}
+
+	.mobile-menu .lines {
+    	border-bottom: 8px double #196CB6; 
+    	border-top: 2.5px solid #196CB6; 
+    	content:"";
+    	height: 2.5px; 
+    	width: 15px;
+    	padding-right: 5px;
+    	margin-top: 3px;
+  		float: right;
+	}
+}
